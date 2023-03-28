@@ -12,7 +12,6 @@ class Category(db.Model):
     name = db.Column(db.String(255),unique=True)
     image = db.Column(db.String(255),nullable=False)
     created_by  = db.Column(db.Integer,db.ForeignKey('users.id'))
-    fooditems = db.Relationship("FoodItem", backref='category')
     sub_categories = db.Relationship("SubCategory", backref='category')
     created_at = db.Column(db.String(255),nullable=True, default=datetime.now())
     updated_at = db.Column(db.String(255),nullable=True, onupdate=datetime.now())

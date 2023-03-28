@@ -16,7 +16,7 @@ class User(db.Model):
   name = db.Column(db.String(255),nullable=False)
   email = db.Column(db.String(255))  
   contact = db.Column(db.String(255))
-  user_type = db.Column(db.String(100),default='Customer')
+  user_type = db.Column(db.String(100))
   password = db.Column(db.String(255))
   created_at = db.Column(db.String(255), default=datetime.now())
   updated_at = db.Column(db.String(255),onupdate=datetime.now())

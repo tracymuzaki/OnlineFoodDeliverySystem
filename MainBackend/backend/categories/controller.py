@@ -74,6 +74,7 @@ def handle_food_category(id):
     
         
         food_category.name = data['name']
+        food_category.image = data['image']
         food_category.updated_at = datetime.utcnow()
         db.session.add(food_category)
         db.session.commit()

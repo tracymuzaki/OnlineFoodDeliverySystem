@@ -34,8 +34,8 @@ def new_food_item():
     price = data['price']
     price_unit = 'UGX'
     image=data['image']
-    category_id=data['category_id']
-    stock = data['stock']
+    sub_category_id=data['sub_category_id']
+    stock_measure = data['stock_measure']
     created_by=get_jwt_identity()
       
   
@@ -47,12 +47,12 @@ def new_food_item():
     if FoodItem.query.filter_by(name=name).first() is not None:
         return jsonify({'error': "FoodItem name exists"}), 409 
 
-    new_food_item = FoodItem(name=name,price=price,price_unit=price_unit,image=image,category_id=category_id,stock=stock,created_by=created_by,created_at=datetime.now(),updated_at=datetime.now()) 
+    new_food_item = FoodItem(name=name,price=price,price_unit=price_unit,image=image,sub_category_id=sub_category_id,stock_measure=stock_measure,created_by=created_by,created_at=datetime.now(),updated_at=datetime.now()) 
       
     #inserting values
     db.session.add(new_food_item)
     db.session.commit()
-    return jsonify({'message':'New food FoodItem created successfully','data': [new_food_item.name,new_food_item.price]}),201
+    return jsonify({'message':'New FoodItem created successfully','data': [new_food_item.name,new_food_item.price]}),201
           
 
 #get,edit and delete food item by id
@@ -65,8 +65,7 @@ def handle_food_item(id):
             "id":food_item.id,
             "name": food_item.name,
             "created_by":food_item.created_by,
-            "created_at": food_item.created_at
-          
+            "created_at": food_item.created_at 
         }
         return {"success": True, "item": response,"message":"Food item details retrieved"},200
 
@@ -78,6 +77,10 @@ def handle_food_item(id):
     
         
         food_item.name = data['name']
+        food_item.price = data['price']
+        food_item.image=data['image']
+        food_item.sub_category_id=data['sub_category_id']
+        food_item.stock_measure = data['stock_measure']
         food_item.updated_at = datetime.utcnow()
         db.session.add(food_item)
         db.session.commit()

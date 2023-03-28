@@ -29,7 +29,7 @@ def create_user():
       name = data['name']
       email = data['email']
       contact = data['contact']
-      user_type = 'Customer'
+      user_type = data['user_type']
       password = data['password']
 
 
@@ -123,6 +123,7 @@ def handle_user(user_id):
         user.email = data['email']
         user.contact = data['contact']
         user.password = generate_password_hash(data['password'])
+        user.user_type = data['user_type']
         user.updated_at = datetime.utcnow()
         db.session.add(user)
         db.session.commit()

@@ -13,6 +13,7 @@ class Address(db.Model):
     description = db.Column(db.String(255),nullable=False)
     district_id = db.Column(db.Integer,db.ForeignKey('districts.id'))
     user_id  = db.Column(db.Integer,db.ForeignKey('users.id'))
+    orders = db.Relationship("Order",backref="address")
     created_at = db.Column(db.String(255),nullable=True)
     updated_at = db.Column(db.String(255),nullable=True)
    

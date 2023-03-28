@@ -12,6 +12,7 @@ class SubCategory(db.Model):
     name = db.Column(db.String(255),unique=True)
     category_id= db.Column(db.Integer,db.ForeignKey('categories.id'))
     created_by  = db.Column(db.Integer,db.ForeignKey('users.id'))
+    food_items = db.Relationship("FoodItem", backref='subcategory')
     created_at = db.Column(db.String(255),nullable=True,default=datetime.now())
     updated_at = db.Column(db.String(255),nullable=True,onupdate=datetime.now())
     
