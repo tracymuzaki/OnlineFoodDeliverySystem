@@ -1,0 +1,26 @@
+.footer_container{
+    display: grid;
+    grid-template-columns: auto auto auto; 
+}
+.footer{
+    margin-top: 20px;
+    background-color: rgb(31,42,64);
+    color: white;
+    text-align: left;
+    padding-left:40px ;
+    padding-bottom: 100px;
+    padding-top: 10px;
+}
+.footer p {
+    color:rgb(243,245,249);    /* transform: translate(-60% -60%); */
+    font-weight:30
+}
+
+
+p.copy {
+   text-align: left;
+    margin-top: 20px;
+    color:rgb(235,75,6) ;
+
+
+} 

@@ -1,0 +1,423 @@
+
+
+.menucontainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 18px;
+  margin-left: 0px;
+  color: rgb(230, 233, 244);
+  background-color:black;
+  margin-bottom: 2px;
+  padding-bottom: 50px;
+  padding-top: 60px;
+
+}
+  .menucolumn1{
+  border: 2px solid rgb(235,75,6);
+  border-radius: 12px;
+  margin: 60px;
+  padding-right:8px; 
+  background-color:black;
+  color: white;
+  
+ } 
+
+/* .menucolumn1 h2{
+  color: white;
+  font-weight: 600;
+} */
+
+.menucontainer img{
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+
+
+
+.snackscontainer{
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 25px;
+  /* margin-left: 200px; */
+  color: white;
+  background-color: black;
+}
+.snackscontainer img{
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+
+}
+.snackscontainer button{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color:rgb(235,75,6);
+  font-size: 30px;
+  color: black;
+}
+
+.katogocontainer{
+  display: grid;
+  grid-template-columns: auto auto ;
+  font-size: 25px;
+  /* margin-left: 200px; */
+  color: white;
+  background-color: black;
+}
+.katogocontainer img{
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+
+}
+.katogocontainer button{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color:rgb(235,75,6);
+  font-size: 30px;
+  color: black;
+  margin-bottom: 50px;
+}
+
+.teacontainer{
+  display: grid;
+  grid-template-columns: auto auto ;
+  font-size: 25px;
+  /* margin-left: 200px; */
+  color: white;
+  background-color: black;
+}
+.teacontainer img{
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+
+}
+.teacontainer button{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(235,75,6);
+  font-size: 30px;
+  color: black;
+}
+
+.drinkscontainer{
+  display: grid;
+  grid-template-columns: auto auto ;
+  font-size: 25px;
+  /* margin-left: 200px; */
+  color:white;
+  background-color: black;
+}
+.drinkscontainer img{
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+
+}
+.drinkscontainer button{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(235,75,6);
+  font-size: 30px;
+  color: black;
+  
+}
+
+
+.categories{
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  
+
+}
+#menuCategories{
+  text-decoration: none;
+  font-family:fantasy;
+  font-weight: 100;
+  color:orange;
+}
+.soupscontainer{
+  display: grid;
+  grid-template-columns: auto auto ;
+  font-size: 25px;
+  /* margin-left: 200px; */
+  color: white;
+  background-color: black;
+
+
+}
+.soupscontainer img{
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+
+}
+.soupscontainer button{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color:rgb(235,75,6);
+  font-size: 30px;
+  color: black;
+}
+
+.grainscontainer{
+  display: grid;
+  grid-template-columns: auto auto ;
+  font-size: 25px;
+  /* margin-left: 200px; */
+  color: white;
+  background-color: black;
+}
+.grainscontainer img{
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+}
+.grainscontainer button{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(231,74,43);
+  font-size: 30px;
+  color: black;
+}
+
+.fruitscontainer{
+  display: grid;
+  grid-template-columns: auto auto ;
+  font-size: 25px;
+  /* margin-left: 200px; */
+  color: white;
+  background-color: black;
+}
+.fruitscontainer img{
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.fruitscontainer button{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color:rgb(231,74,43);
+  font-size: 30px;
+  color: black;
+  margin-bottom: 50px;
+}
+
+.winescontainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 25px;
+  margin-left: 0px;
+  color: rgb(230, 233, 244);
+  margin-bottom: 10px;
+  padding-top: 20px;
+  background-color: black;
+}
+
+.winescontainer img{
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.winescontainer button{
+  
+  border-radius: 5px;
+  background-color:rgb(231,74,43);
+  font-size: 30px;
+  color: black;
+  
+}
+
+.popular h2{
+color:black;
+margin-left: 40px;
+text-align: left;
+}
+.popularfood{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  font-size: 25px;
+  margin-left: 0px;
+  color: black;
+  background-color: white;
+  margin-bottom: 0px;
+  padding-top: 10px;
+}
+
+.popularfood img{
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px solid orange;
+}
+
+.dessertscontainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 20px;
+  margin-left: 40px;
+  /* margin-left: 100px; */
+  color: white;
+  background-color: black;
+  margin-bottom:55px ;
+}
+
+.dessertscontainer img{
+  width: 350px;
+  height: 300px;
+  border-radius: 5px;
+  margin-left: 30px;
+  margin-bottom: 70px;
+}
+
+.dessertscontainer button{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(231,74,43);
+  font-size: 30px;
+  color: black;
+}
+
+.appetizercontainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 25px;
+  /* margin-left: 80px; */
+  color: white;
+  background-color: black;
+}
+h2{
+  color: white;
+}
+
+.appetizercontainer img{
+  width: 350px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.appetizercontainer button{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(235,75,6);
+  font-size: 30px;
+  color: black;
+  margin-bottom: 50px;
+}
+
+h1{
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+
+  
+}
+
+button{
+  background-color:white;
+  border-radius: 5px;
+  border: none;
+  /* font-size: 15px; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:black;
+
+
+} 
+
+
+
+
+ .dinnerContainer{
+  
+  background-color: black;
+}
+.lunchContainer{
+  background-color: black;
+}
+.breakfastContainer{
+  background-color: black;
+ }
+
+ .subcategoriescontainer{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 0px;
+  color: rgb(230, 233, 244);
+  background-color:black;
+  margin-bottom: 12px;
+  padding-bottom: 50px;
+  padding-top: 60px;
+  
+  
+
+}
+.subcategoriescontainer h2{
+  font-size: 18px;
+  
+  
+
+}
+.subcategoriescontainer img{
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+ .subcategoriescolumn1{
+  /* border: 2px solid rgb(235,75,6); */
+  border-radius: 12px;
+  margin: 20px;
+  padding-bottom: 50px;
+  background-color:black;
+  color: white;
+ }
+
+ .lunchCategories{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* font-size: 15px; */
+  margin-left: 0px;
+  color: rgb(230, 233, 244);
+  background-color:black;
+  margin-bottom: 2px;
+  padding-bottom: 50px;
+  padding-top: 60px;
+ }
+ .lunchCategories img{
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.dinnerCategories{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* font-size: 15px; */
+  margin-left: 0px;
+  color: rgb(230, 233, 244);
+  background-color:black;
+  margin-bottom: 2px;
+  padding-bottom: 50px;
+  padding-top: 60px;
+}
+.dinnerCategories img{
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.katogocontainer p{
+  color: white;
+}
+.winescontainer p{
+  color:white
+}
