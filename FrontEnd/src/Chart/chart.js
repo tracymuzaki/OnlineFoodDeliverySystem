@@ -1,5 +1,5 @@
 import React , {useState} from 'react';
-import Navbar from './components/Navbar';
+import Navbar2 from './components/Chart1';
 import Amazon from './components/Amazon';
 import Cart from './components/Cart';
 import './styles/amazon.css';
@@ -41,12 +41,12 @@ const Chart = () => {
 
   return (
 	<React.Fragment>
-		<Navbar size={cart.length} setShow={setShow} />
+		<Navbar2 size={cart.length} setShow={setShow} />
 		{
 			show ? <Amazon handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
 		}
 		{
-			warning && <div className='warning'>Item is already added to your cart</div>
+			warning && <div className='warning'>Item is already added to cart</div>
 		}
 	</React.Fragment>
   )

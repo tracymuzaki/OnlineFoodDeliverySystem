@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export function LoginForm() {
+export function AdminLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
@@ -40,7 +40,7 @@ export function LoginForm() {
     <div className="container">
       <div className="form_container" id="login">
         <div className="imgp">
-          <h2>Log in</h2>
+          <h2>Admin</h2>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -61,10 +61,7 @@ export function LoginForm() {
           <button className="buttonlogin">Log in</button>
         </form>
         <p>
-          Login as admin|<Link to="/admin">login</Link>
-        </p>
-        <p>
-          Don't have an account?| <Link to="/register">Sign up</Link>
+          Login as customer| <Link to="/login">Login</Link>
         </p>
         <Link to="/" className="back">
           Back

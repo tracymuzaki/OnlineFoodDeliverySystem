@@ -11,13 +11,13 @@ function Footer(){
           <div className="footer_container">
             <div className="locate">
               <h3>LOCATIONS</h3>
-              <p>KAMPALA</p>
+              <h4>Kampala</h4>
               <p>Kira Road</p>  
               <p>Parliamentary Avenue</p>
               <p>Equatorial mall</p>
               <p>Namugongo</p>
               <p>Kamwokya</p>
-              <p>MUKONO</p>
+              <h4>Mukono</h4>
             </div>
 
             

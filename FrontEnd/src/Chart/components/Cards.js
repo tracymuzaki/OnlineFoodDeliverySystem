@@ -12,7 +12,7 @@ const Cards = ({item, handleClick}) => {
             <p>{title}</p>
             <p>{author}</p>
             <p>Price - {price}UGX</p>
-            <button onClick={()=>handleClick(item)} >Add to Cart</button>
+            <button onClick={()=>handleClick(item)} >Order</button>
         </div>
     </div>
   )

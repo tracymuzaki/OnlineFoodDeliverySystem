@@ -3,12 +3,12 @@ import '../styles/navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCartPlus}  from '@fortawesome/free-solid-svg-icons';
 
-const Navbar = ({size, setShow}) => {
+const Navbar2 = ({size, setShow}) => {
   return (
     <nav>
         <div className="nav_box">
             <span className="my_shop" onClick={()=>setShow(true)}>
-             <button>Order</button>
+             <button>fooditems</button>
             </span>
             <div className="cart" onClick={()=>setShow(false)}>
                 <span>
@@ -21,4 +21,4 @@ const Navbar = ({size, setShow}) => {
   )
 }
 
-export default Navbar
+export default Navbar2;

@@ -1,208 +1,101 @@
-/* .my_log{
-    margin: 0px;
+.my_logo {
+    width: 230px;
+    height: 130px;
+    margin-top: 0px;
+    margin-left: 100px;
+}
+
+.overall_nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-} */
-.rrr.my_logo{
-   width: 300px;
-   height: 200px;
-   margin-top: 0px;
-   margin-left: 120px;
-}
-
-.search_bar{
-    display: flex;
-    align-items: flex-start;
-    padding: 10px 15px;
-    height: 15px;
-    border-radius: 50px;
-    background: white;
-    margin-top: 40px;
-
-}
-input::placeholder{
-    margin-top: 40px;
-}
-
-.search_bar input{
-    border: none;
-    outline: none;
-    background: transparent;
-    color: aliceblue;
-}
-
-
-.overall_nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-    background-color:rgb(235,75,6);
-    
-    padding-right: 30px;
-    padding-bottom: 5px;
-    
+    justify-content: space-between;
+    background-color: rgb(235, 75, 6);
     border-top: none;
     border-right: none;
 }
 
- .nav_link3 .home {
-    color: aliceblue;
-    font-size: 20px;
-}
-.nav_link2 .home {
-    color: aliceblue;
-    font-size: 20px;
-}
-.nav_link1 .home {
-    color: aliceblue;
-    font-size: 20px;
-}
-.nav_link3.home:active{
-    color: rgb(235,75,6);
-}
-
-#btns{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    /* margin-left: 600px; */
+#btns {
     margin-top: 40px;
     font-size: 19px;
-    background-color: black;    border-radius: 5px;
+    background-color: black;
+    border-radius: 8px;
     margin-right: 10px;
-    width: 100px;
+    width: 95px;
     height: 40px;
     border: 1px solid white;
     text-decoration: none;
-    
+    color: white;
 }
-.buttonlink{
-    display:flex;
+
+#btn-r {
+    margin-top: 40px;
+    font-size: 19px;
+    background-color: black;
+    border-radius: 8px;
+    width: 95px;
+    height: 40px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+}
+
+.buttonlink {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 700px;
+    margin-left:560px;
 }
-    
 
-#btn-r{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-right: 0px;
-    margin-top: 40px;
-    font-size: 19px;
-    background-color: black;   
-    border-radius: 5px;
-    
-    width: 100px;
-    height: 40px;
-    border: 1px solid white;
-    text-decoration: none;
-    
-}
-a{
-    padding: 10px;
+a {
+    padding: 5px;
     color: rgb(243, 245, 249);
     text-decoration: none;
     font-size: 18px;
-    
-}
-a:active{
-    color: rgb(235,75,6);
-}
-
-/* #us{
-    margin-top: 40px;
-    font-size: 22px;
-    text-decoration: none; 
-} */
-
-.rule{
-    color: black;
-    top: 70px;
-}
-
-.icon{
-    font-size: 50px;
 
 }
 
+a:active {
+    color: rgb(235, 75, 6);
+}
 
- .nav_link1 {
+.nav_link1 {
     margin-top: 48px;
-    margin-left: 20px;
+    margin-left: 200px;
     font-size: 20px;
-    color: white;} 
+    color: white;
+}
 
-
-
-.nav_link2{
+.nav_link2 {
     margin-top: 48px;
     font-size: 20px;
     color: white;
-    margin-right: 100px;
     margin-left: 25px;
-    
-
+    margin-right: 20px;
 }
 
-
-
-.nav_link3{
-    margin-top: 48px;
-    font-size: 20px;
+.nav_link1 .home:hover {
     color: white;
-    margin-left: 5px;
-    
-
 }
 
-.nav_link3:active  {
-    text-decoration: none;
-    color: black;
+.nav_link2 .menu:hover {
+    color: white;
 }
 
-
-.nav_link1:active  {
-    text-decoration: none;
-    color: black;
-}
-.rrr{
+.rrr {
     display: flex;
     flex-direction: row;
-    
     width: 80px;
     justify-content: space-around;
-    
-}
- .rrr h4{
-    color:rgb(243,245,249)    /* transform: translate(-60% -60%); */
 
-    
 }
 
-
-
-
-
-
-
-/* .slogan{
-    margin-right:  300px;
-    color: darkorange;
-    
-} */
-/* .slogan h5{
-    text-align: left;
-    margin-left: 1px;
-    color: black;
-    margin-bottom: 35px;
-    
+.rrr h5 {
+    color: rgb(243, 245, 249);
+    margin-top: 27px;
 }
 
-
-
-
-     */
+#chart{
+    margin-top: 40px;
+    width: 150px;
+    height: 41px;
+}

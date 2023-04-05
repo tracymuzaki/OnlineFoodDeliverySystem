@@ -1,4 +1,3 @@
-
 import './App.css';
 import Navbar from './navbar';
 import Footer from './footer';
@@ -7,9 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { RegisterForm} from './forms/register';
 import Chart from './Chart/chart';
 import {LoginForm} from './forms/login';
-// import { Layout } from './layout';  
+import {AdminLogin} from './forms/admin';
 import {Menu} from './menus/menu';
-import { About } from './about';
 import { NoPage } from "./nopage";
 import { Lunch } from './menus/lunch';
 import{Breakfast} from './menus/breakfast';
@@ -27,20 +25,16 @@ import Desserts from './menus/desserts';
 import Appetizers from './menus/appetizers';
 
 
-
-
 function App() {
   return (
     <div className="App">
-
-    <BrowserRouter>
-      <Routes>
-        {/* <Route path="/" element={<Layout />}> */}
-           <Route index element={ [<Navbar/>,<LandingPage/>,<Footer />] } />
-          <Route path="login" element={<LoginForm />} /> 
-          <Route path="register" element={ <RegisterForm/>} />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={ [<Navbar/>,<LandingPage/>,<Footer />] } />
+          <Route path="login" element={[<Navbar/>,<LoginForm />,<Footer />]} /> 
+          <Route path="admin" element={[<Navbar/>,<AdminLogin />,<Footer />]} /> 
+          <Route path="register" element={[<Navbar/>,<RegisterForm/>,<Footer />]} />
           <Route path="menu" element={[<Navbar/>,<Menu/>,<Footer/>]} /> 
-          <Route path="about" element={<About/>} /> 
           <Route path="lunch" element={[<Navbar/>,<Lunch/>,<Footer/>]} /> 
           <Route path="breakfast" element={[<Navbar/>,<Breakfast/>,<Footer/>]} /> 
           <Route path="dinner" element={[<Navbar/>,<Dinner/>,<Footer/>]} /> 
@@ -56,14 +50,8 @@ function App() {
           <Route path="appetizers" element={[<Navbar/>,<Appetizers/>,<Footer/>]}/>
           <Route path="chart" element={<Chart/>}/>
           <Route path="*" element={<NoPage />} />
-        {/* </Route> */}
-      </Routes>
-    </BrowserRouter>
-
-     
-
-      
-    
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

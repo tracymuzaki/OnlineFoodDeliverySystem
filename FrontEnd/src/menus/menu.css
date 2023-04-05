@@ -1,5 +1,3 @@
-
-
 .menucontainer{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -7,7 +5,6 @@
   margin-left: 0px;
   color: rgb(230, 233, 244);
   background-color:black;
-  margin-bottom: 2px;
   padding-bottom: 50px;
   padding-top: 60px;
 
@@ -22,25 +19,16 @@
   
  } 
 
-/* .menucolumn1 h2{
-  color: white;
-  font-weight: 600;
-} */
-
 .menucontainer img{
   width: 300px;
   height: 300px;
   border-radius: 5px;
 }
 
-
-
-
 .snackscontainer{
   display: grid;
   grid-template-columns: auto auto;
   font-size: 25px;
-  /* margin-left: 200px; */
   color: white;
   background-color: black;
 }
@@ -62,7 +50,6 @@
   display: grid;
   grid-template-columns: auto auto ;
   font-size: 25px;
-  /* margin-left: 200px; */
   color: white;
   background-color: black;
 }
@@ -85,7 +72,6 @@
   display: grid;
   grid-template-columns: auto auto ;
   font-size: 25px;
-  /* margin-left: 200px; */
   color: white;
   background-color: black;
 }
@@ -107,7 +93,6 @@
   display: grid;
   grid-template-columns: auto auto ;
   font-size: 25px;
-  /* margin-left: 200px; */
   color:white;
   background-color: black;
 }
@@ -144,7 +129,6 @@
   display: grid;
   grid-template-columns: auto auto ;
   font-size: 25px;
-  /* margin-left: 200px; */
   color: white;
   background-color: black;
 
@@ -168,7 +152,6 @@
   display: grid;
   grid-template-columns: auto auto ;
   font-size: 25px;
-  /* margin-left: 200px; */
   color: white;
   background-color: black;
 }
@@ -189,7 +172,6 @@
   display: grid;
   grid-template-columns: auto auto ;
   font-size: 25px;
-  /* margin-left: 200px; */
   color: white;
   background-color: black;
 }
@@ -226,7 +208,6 @@
 }
 
 .winescontainer button{
-  
   border-radius: 5px;
   background-color:rgb(231,74,43);
   font-size: 30px;
@@ -234,11 +215,17 @@
   
 }
 
+.popular{
+  background-color: white;
+  padding-top: 15px;
+}
+
 .popular h2{
 color:black;
 margin-left: 40px;
 text-align: left;
 }
+
 .popularfood{
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -247,7 +234,8 @@ text-align: left;
   color: black;
   background-color: white;
   margin-bottom: 0px;
-  padding-top: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .popularfood img{
@@ -262,7 +250,6 @@ text-align: left;
   grid-template-columns: auto auto auto;
   font-size: 20px;
   margin-left: 40px;
-  /* margin-left: 100px; */
   color: white;
   background-color: black;
   margin-bottom:55px ;
@@ -288,7 +275,6 @@ text-align: left;
   display: grid;
   grid-template-columns: auto auto auto;
   font-size: 25px;
-  /* margin-left: 80px; */
   color: white;
   background-color: black;
 }
@@ -326,15 +312,11 @@ button{
   background-color:white;
   border-radius: 5px;
   border: none;
-  /* font-size: 15px; */
   font-family: Georgia, 'Times New Roman', Times, serif;
   color:black;
 
 
 } 
-
-
-
 
  .dinnerContainer{
   
@@ -373,7 +355,6 @@ button{
 }
 
  .subcategoriescolumn1{
-  /* border: 2px solid rgb(235,75,6); */
   border-radius: 12px;
   margin: 20px;
   padding-bottom: 50px;
@@ -384,7 +365,6 @@ button{
  .lunchCategories{
   display: grid;
   grid-template-columns: auto auto auto;
-  /* font-size: 15px; */
   margin-left: 0px;
   color: rgb(230, 233, 244);
   background-color:black;
@@ -401,7 +381,6 @@ button{
 .dinnerCategories{
   display: grid;
   grid-template-columns: auto auto auto;
-  /* font-size: 15px; */
   margin-left: 0px;
   color: rgb(230, 233, 244);
   background-color:black;

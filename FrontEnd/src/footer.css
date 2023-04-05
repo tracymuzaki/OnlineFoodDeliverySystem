@@ -3,16 +3,15 @@
     grid-template-columns: auto auto auto; 
 }
 .footer{
-    margin-top: 20px;
-    background-color: rgb(31,42,64);
+    background-color: rgb(17, 19, 23);
     color: white;
     text-align: left;
     padding-left:40px ;
-    padding-bottom: 100px;
-    padding-top: 10px;
+    padding-bottom: 250px;
+    padding-top: 40px;
 }
 .footer p {
-    color:rgb(243,245,249);    /* transform: translate(-60% -60%); */
+    color:rgb(243,245,249);    
     font-weight:30
 }
 
