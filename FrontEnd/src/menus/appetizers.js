@@ -10,21 +10,21 @@ function Appetizers(){
              <div className="appetizercolumn1">
                  <h2>Cocktails</h2>
                  <img src="./images/cocktails.jpg" alt="Cocktails"/>
-                 <p>Price: $150</p>
+                 <p>Price: 10000UGX</p>
                  <button>Order</button>
              </div>
 
              <div className="appetizercolumn2">
                  <h2>Chips and Dips</h2>
                  <img src="./images/chips and dips.jpg" alt="Chips and Dips"/>
-                 <p>Price: $200</p>
+                 <p>Price: 15000UGX</p>
                  <button>Order</button>
              </div>
 
              <div className="appetizercolumn3">
                  <h2>Salads</h2>
                  <img src="./images/salads.jpg" alt="Salads"/>
-                 <p>Price: $90</p>
+                 <p>Price: 5000UGX</p>
                  <button>Order</button>
              </div>
 

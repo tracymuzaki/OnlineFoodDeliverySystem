@@ -7,26 +7,26 @@ function Soups(){
             
             <div className="soupscontainer">
                 <div className="soupscolumn1">
-                    <h3>chicken soup</h3>
+                    <h3>Chicken Soup</h3>
                     <img src="./images/chicken soup.jpg" alt="chicken soup"/>
-                    <p>Price: $100</p>
+                    <p>Price: 10000ugx</p>
                     <button>Order</button>
 
-                    <h3>vegetable soup</h3>
+                    <h3>Vegetable Soup</h3>
                     <img src="./images/vegetables.jpg" alt="vegetable soup"/>
-                    <p>Price: $50</p>
+                    <p>Price: 5000UGX</p>
                     <button>Order</button>
                 </div>
                 <div className="soupcolumn2">
 
-                    <h3>Tomato soup</h3>
+                    <h3>Tomato Soup</h3>
                     <img src="./images/tomato soup.jpg" alt="Tomato soup"/>
-                    <p>Price: $50</p>
+                    <p>Price: 8000UGX</p>
                     <button>Order</button>
 
-                    <h3>mushroom soup</h3>
+                    <h3>Mushroom Soup</h3>
                     <img src="./images/mushroom soup.jpg" alt="mushroom soup"/>
-                    <p>Price: $50</p>
+                    <p>Price: 5000UGX</p>
                     <button>Order</button>
                 </div>
             </div>

@@ -13,7 +13,8 @@
   border: 2px solid rgb(235,75,6);
   border-radius: 12px;
   margin: 60px;
-  padding-right:8px; 
+  padding: 10px 2px 10px 10px; 
+  
   background-color:black;
   color: white;
   
@@ -31,9 +32,11 @@
   font-size: 25px;
   color: white;
   background-color: black;
+  padding-top: 20px;
+  
 }
 .snackscontainer img{
-  width: 300px;
+  width: 400px;
   height: 300px;
   border-radius: 5px;
 
@@ -41,9 +44,13 @@
 .snackscontainer button{
   border: 1px solid white;
   border-radius: 5px;
-  background-color:rgb(235,75,6);
+  background-color:rgb(231,74,43);
   font-size: 30px;
   color: black;
+  margin-bottom: 60px;
+
+
+
 }
 
 .katogocontainer{
@@ -52,6 +59,7 @@
   font-size: 25px;
   color: white;
   background-color: black;
+  padding-top: 20px;
 }
 .katogocontainer img{
   width: 400px;
@@ -62,7 +70,7 @@
 .katogocontainer button{
   border: 1px solid white;
   border-radius: 5px;
-  background-color:rgb(235,75,6);
+  background-color:rgb(231,74,43);
   font-size: 30px;
   color: black;
   margin-bottom: 50px;
@@ -74,6 +82,9 @@
   font-size: 25px;
   color: white;
   background-color: black;
+  padding-top: 20px;
+  
+
 }
 .teacontainer img{
   width: 400px;
@@ -84,9 +95,11 @@
 .teacontainer button{
   border: 1px solid white;
   border-radius: 5px;
-  background-color: rgb(235,75,6);
+  background-color: rgb(231,74,43);
   font-size: 30px;
   color: black;
+  margin-bottom: 50px;
+
 }
 
 .drinkscontainer{
@@ -95,9 +108,10 @@
   font-size: 25px;
   color:white;
   background-color: black;
+  padding-top: 20px;
 }
 .drinkscontainer img{
-  width: 300px;
+  width: 400px;
   height: 300px;
   border-radius: 5px;
 
@@ -105,9 +119,10 @@
 .drinkscontainer button{
   border: 1px solid white;
   border-radius: 5px;
-  background-color: rgb(235,75,6);
+  background-color: rgb(231,74,43);
   font-size: 30px;
   color: black;
+  margin-bottom:50px;
   
 }
 
@@ -131,6 +146,7 @@
   font-size: 25px;
   color: white;
   background-color: black;
+  padding-top: 20px;
 
 
 }
@@ -143,9 +159,10 @@
 .soupscontainer button{
   border: 1px solid white;
   border-radius: 5px;
-  background-color:rgb(235,75,6);
+  background-color:rgb(231,74,43);
   font-size: 30px;
   color: black;
+  margin-bottom: 60px;
 }
 
 .grainscontainer{
@@ -154,6 +171,7 @@
   font-size: 25px;
   color: white;
   background-color: black;
+  padding-top: 20px;
 }
 .grainscontainer img{
   width: 400px;
@@ -166,6 +184,7 @@
   background-color: rgb(231,74,43);
   font-size: 30px;
   color: black;
+  margin-bottom: 50px;
 }
 
 .fruitscontainer{
@@ -174,6 +193,7 @@
   font-size: 25px;
   color: white;
   background-color: black;
+  padding-top: 20px;
 }
 .fruitscontainer img{
   width: 400px;
@@ -212,6 +232,7 @@
   background-color:rgb(231,74,43);
   font-size: 30px;
   color: black;
+  margin-bottom: 50px;
   
 }
 
@@ -252,16 +273,15 @@ text-align: left;
   margin-left: 40px;
   color: white;
   background-color: black;
-  margin-bottom:55px ;
+  padding-top: 20px;
 }
 
 .dessertscontainer img{
   width: 350px;
   height: 300px;
   border-radius: 5px;
-  margin-left: 30px;
-  margin-bottom: 70px;
-}
+  /* margin-left: 30px; */
+  }
 
 .dessertscontainer button{
   border: 1px solid white;
@@ -269,6 +289,7 @@ text-align: left;
   background-color: rgb(231,74,43);
   font-size: 30px;
   color: black;
+  margin-bottom: 50px;
 }
 
 .appetizercontainer{
@@ -277,6 +298,7 @@ text-align: left;
   font-size: 25px;
   color: white;
   background-color: black;
+  padding-top: 20px;
 }
 h2{
   color: white;
@@ -291,7 +313,7 @@ h2{
 .appetizercontainer button{
   border: 1px solid white;
   border-radius: 5px;
-  background-color: rgb(235,75,6);
+  background-color:rgb(231,74,43);
   font-size: 30px;
   color: black;
   margin-bottom: 50px;
@@ -329,7 +351,7 @@ button{
   background-color: black;
  }
 
- .subcategoriescontainer{
+.subcategoriescontainer{
   display: grid;
   grid-template-columns: auto auto;
   margin-left: 0px;
@@ -337,19 +359,19 @@ button{
   background-color:black;
   margin-bottom: 12px;
   padding-bottom: 50px;
-  padding-top: 60px;
+  padding-top: 20px;
   
   
 
 }
 .subcategoriescontainer h2{
-  font-size: 18px;
+  font-size: 30px;
   
   
 
 }
 .subcategoriescontainer img{
-  width: 300px;
+  width: 400px;
   height: 300px;
   border-radius: 5px;
 }
