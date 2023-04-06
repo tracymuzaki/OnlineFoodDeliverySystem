@@ -25,7 +25,6 @@ function LandingPage() {
       <div className="landing">
         <img src={currentImage} alt="lunch" />
         <h2 className="welcome">Welcome to Fast and Yummy</h2>
-
         <Link to="menu">
           {" "}
           <button className="orderbtn">ORDER NOW</button>

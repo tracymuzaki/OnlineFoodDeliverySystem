@@ -4,15 +4,16 @@ h1 {
 
 .landing {
     align-content: center;
-    background-color: black;
     overflow: hidden;
-    height: 620px;
+    height: 680px;
     width: 100vw;
 }
 
 .landing img {
     object-fit: cover;
-    opacity: 0.7;
+    opacity: 0.8;
+    width: 1800px;
+    transform: translate3d(-100px, 0px, -1000px);
 }
 
 #name {
@@ -53,12 +54,11 @@ img {
 
 .welcome {
     position: absolute;
-    top: 40%;
+    top: 42%;
     color: white;
-    left: 20%;
-    color: white;
+    left: 13.5%;
     transform: translate(-50% -50%);
-    font-size: 65px;
+    font-size: 75px;
 }
 
 
@@ -79,7 +79,7 @@ img {
     font-size: 20px;
 }
 
-.p1 {
+/* .p1 {
     color: rgb(1, 13, 44);
     position: absolute;
     top: 50%;
@@ -89,13 +89,13 @@ img {
     font-style: oblique;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 300;
-}
+} */
 
 .orderbtn {
     color: whitesmoke;
-    background-color: rgb(235, 75, 6);
+    background-color: black;
     position: absolute;
-    top: 65%;
+    top: 67%;
     left: 46%;
     transform: translate(-50% -50%);
     font-size: 22px;
@@ -103,7 +103,7 @@ img {
     border-radius: 8px;
     border: none;
     text-align: center;
-    padding: 2px 4px;
+    padding: 0px 8px;
 }
 
 .orderbtn:hover {

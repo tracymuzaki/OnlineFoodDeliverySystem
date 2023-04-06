@@ -1,3 +1,28 @@
+.page img{
+    image-resolution: 1000px;
+    width: 1200px;
+    height: 500px;
+}
+
+.page{
+    background-color: white;
+}
+
+.page span{
+    color: purple;
+    font-size: 18px;
+}
+
+.page p{
+    color: black;
+    font-size: 22px;
+}
+
+.page span:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
 .my_logo {
     width: 230px;
     height: 130px;
@@ -12,6 +37,8 @@
     background-color: rgb(235, 75, 6);
     border-top: none;
     border-right: none;
+    position: fixed;
+    z-index: 1;
 }
 
 #btns {
@@ -43,7 +70,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-left:560px;
+    margin-left: 560px;
 }
 
 a {
@@ -94,7 +121,7 @@ a:active {
     margin-top: 27px;
 }
 
-#chart{
+#chart {
     margin-top: 40px;
     width: 150px;
     height: 41px;

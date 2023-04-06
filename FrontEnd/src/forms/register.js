@@ -56,7 +56,7 @@ export function RegisterForm() {
   };
   return (
     <div className="container">
-      <div className="form_container">
+      <div className="form_container" id="register">
         <div className="imgp">
           <h2>Sign Up</h2>
         </div>

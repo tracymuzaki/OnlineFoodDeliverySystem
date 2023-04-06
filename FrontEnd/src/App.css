@@ -44,7 +44,7 @@ form.form-group.error {
 /* loginform */
 .container {
   display: flex;
-  height: 100vh;
+  height: 130vh;
   justify-content: center;
   align-items: center;
 }
@@ -139,9 +139,13 @@ p {
   color: black;
 }
 
-#login{
+#login {
   height: 65vh;
-}  
+}
+
+#register {
+  margin-top: 110px;
+}
 
 p a {
   color: rgb(235, 75, 6);

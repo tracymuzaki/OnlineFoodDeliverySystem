@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
-// import Navbar2 from './Chart/components/Chart1';
 
 function Navbar() {
   return (
@@ -39,7 +38,8 @@ function Navbar() {
             <span>
               <FontAwesomeIcon
                 icon={faCartPlus}
-                className="fa-solid fa-cart-plus" id="chart"
+                className="fa-solid fa-cart-plus"
+                id="chart"
               />
             </span>
           </div>
