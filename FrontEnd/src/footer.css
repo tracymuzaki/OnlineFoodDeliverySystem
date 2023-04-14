@@ -8,7 +8,7 @@
     color: white;
     text-align: left;
     padding-left: 40px;
-    padding-bottom: 250px;
+    padding-bottom: 120px;
     padding-top: 40px;
 }
 
@@ -22,6 +22,8 @@ p.copy {
     text-align: left;
     margin-top: 20px;
     color: rgb(235, 75, 6);
+}
 
-
+.socialmedia span:hover{
+    color: rgb(235, 75, 6);
 }

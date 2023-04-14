@@ -1,6 +1,20 @@
 import React from "react";
 
 function TeaItems() {
+  fetch("http://127.0.0.1:5000/users/", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
   return (
     <div>
       <div className="teacontainer">

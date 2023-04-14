@@ -11,7 +11,7 @@ class Config:
 
 class DevelopmentConfig(Config):
    DEBUG=True
-   SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://postgres:witi2022@localhost:5432/e_commerce"
+   SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://postgres:witi22@localhost:5432/e_commerce"
 
 
 class TestingConfig(Config):

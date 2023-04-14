@@ -1,6 +1,22 @@
 import { Link } from "react-router-dom";
 import "./menu.css";
+
 export function Menu() {
+  fetch("http://127.0.0.1:5000/users/", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
   return (
     <div>
       <div className="menucontainer">
@@ -15,72 +31,17 @@ export function Menu() {
           <Link to="/lunch">
             {" "}
             <h2>Lunch</h2>
-            <img src="./img/buffetug.jfif" alt="lunch" />
+            <img src="./images/lunch_main.jpg" alt="lunch" />
           </Link>
         </div>
 
         <div className="menucolumn1">
           <Link to="/dinner">
             <h2>Dinner</h2>
-            <img src="./img/cafech.jpg" alt="Dinner" />
+            <img src="./images/dinner_main.jpg" alt="Dinner" />
           </Link>
         </div>
       </div>
     </div>
   );
 }
-
-// import React from "react";
-// import { useState,useEffect } from "react";
-// import "./menu.css"
-// import { Link } from "react-router-dom";
-
-// export function Menu() {
-//       const [categories, setCategories] = useState([]);
-//     // const [activeImageIndex, setActiveImageIndex] = useState(0);
-//     console.log(categories,"categoryState");
-//     const fetchAllCategories =()=>{
-//         fetch('http://127.0.0.1:5000/categories')
-//         .then(Response=>Response.json(),"api response")
-//         .then(data=>setCategories(data.categories));
-//     }
-
-//     useEffect(()=>{
-//         fetchAllCategories();
-//     },[]);
-
-//     return (
-//       <div className='menucontainer'>
-//         <div className='menucolumn1'>
-//             {categories.map(food_category =>
-//             <div>
-//               <Link to="/breakfast">
-//                 <h2>"name":{food_category.name}</h2>
-//                 <img>"image":{food_category.image}</img>
-//               </Link>
-//                 {/* <span>"Title":{category.title}</span>
-//                 <span>"Brand":{category.brand}</span> */}
-//             </div>)}
-//             {categories.map(food_category =>
-//             <div>
-//               <Link to="/breakfast">
-//                 <h2>"name":{food_category.name}</h2>
-//                 <img>"image":{food_category.image}</img>
-//               </Link>
-//                 {/* <span>"Title":{category.title}</span>
-//                 <span>"Brand":{category.brand}</span> */}
-//             </div>)}
-//             {categories.map(food_category =>
-//             <div>
-//               <Link to="/breakfast">
-//                 <h2>"name":{food_category.name}</h2>
-//                 <img>"image":{food_category.image}</img>
-//               </Link>
-//                 {/* <span>"Title":{category.title}</span>
-//                 <span>"Brand":{category.brand}</span> */}
-//             </div>)}
-//         </div>
-
-//       </div>
-//     );
-//    }

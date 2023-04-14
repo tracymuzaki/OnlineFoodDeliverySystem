@@ -1,10 +1,4 @@
 /* categories */
-.categories {
-  display: flex;
-  justify-content: space-around;
-  font-size: 20px;
-}
-
 .menucontainer {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -15,13 +9,14 @@
   padding-bottom: 50px;
   padding-top: 160px;
   text-transform: uppercase;
+  justify-content: center;
 }
 
 .menucolumn1 {
   border: 2px solid rgb(235, 75, 6);
   border-radius: 12px;
   margin: 60px;
-  padding: 10px 2px 10px 10px;
+  padding: 10px 4px 10px 10px;
   background-color: black;
   color: white;
 

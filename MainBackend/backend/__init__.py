@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from config import config
 from backend.db import db
@@ -7,6 +8,8 @@ from backend.db import db
 
 def create_app(config_name):
     app = Flask(__name__)
+    # Enable CORS for all routes
+    CORS(app)
     app.config.from_object(config[config_name])
     config[config_name].init_app(app)
     app.config.from_pyfile("../config.py")
@@ -19,7 +22,6 @@ def create_app(config_name):
     from backend.regions.controller import regions
     from backend.districts.controller import districts
     from backend.addresses.controller import addresses
-    # from backend.auth.controller import auth
     from backend.food_items.controller import food_items
     from backend.orders.controller import orders
     from backend.subcategories.controller import subcategories
@@ -30,7 +32,6 @@ def create_app(config_name):
     app.register_blueprint(regions)
     app.register_blueprint(districts)
     app.register_blueprint(addresses)
-    # app.register_blueprint(auth)
     app.register_blueprint(food_items)
     app.register_blueprint(orders)
     app.register_blueprint(subcategories)

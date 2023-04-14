@@ -22,19 +22,19 @@ function Footer() {
 
           <div>
             <h3>CONTACTS</h3>
-            <p>info@fastandyummy.co.ug</p>
-
             <p>+256 706517066</p>
             <p>+256 741099846</p>
             <p>Toll free: +008 8004 537</p>
-
-            <TwitterIcon />
-            <span> @fastandyummy1.com</span>
-            <div>
+            <p>info@fastandyummy.co.ug</p>
+            <div className="socialmedia">
+              <TwitterIcon />
+              <span> @fastandyummy1.com</span>
+            </div>
+            <div className="socialmedia">
               <FacebookIcon />
               <span> fastandyummy1</span>
             </div>
-            <div>
+            <div className="socialmedia">
               <MarkunreadIcon />
               <span> fastandyummy@gmail.com</span>
             </div>
