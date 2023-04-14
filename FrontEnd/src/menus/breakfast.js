@@ -27,7 +27,7 @@ export function Breakfast() {
         </div>
         <div className="breakfastcolumn1">
           <Link to="/drinkitems">
-            <h2>Drinks and Beverages</h2>
+            <h2>Beverages</h2>
             <img src="./img/cafech.jpg" alt="Drinks" />
           </Link>
         </div>

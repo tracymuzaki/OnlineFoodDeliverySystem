@@ -10,7 +10,7 @@ function Drinks() {
           <p>Price: 5000UGX</p>
           <button>Order</button>
 
-          <h2>Smoothies and Shakes</h2>
+          <h2>Smoothies</h2>
           <img
             src="./images/smoothies and shakes.jpg"
             alt="smoothies and shakes"

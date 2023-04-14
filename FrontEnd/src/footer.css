@@ -25,3 +25,23 @@ p.copy {
 
 
 }
+
+@media (min-width:481px) and (max-width:768px){
+    .footer {
+        background-color: rgb(17, 19, 23);
+        color: white;
+        text-align: left;
+        padding-left: 40px;
+        padding-bottom: 250px;
+        padding-top: 40px;
+        font-size: 12px;
+        width: 100%;
+    }
+    h3{
+        font-size: 15px;
+    }
+    h4{
+        font-size: 13px;
+    }
+    
+}
