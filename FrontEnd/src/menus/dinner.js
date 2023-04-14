@@ -3,20 +3,20 @@ import { Link } from "react-router-dom";
 import "./menu.css";
 
 export function Dinner() {
-  fetch("http://127.0.0.1:5000/users/", {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
-    },
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
+  // fetch("http://127.0.0.1:5000/users/", {
+  //   method: "GET",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //     "Access-Control-Allow-Origin": "*",
+  //   },
+  // })
+  //   .then((response) => response.json())
+  //   .then((data) => {
+  //     console.log(data);
+  //   })
+  //   .catch((error) => {
+  //     console.error(error);
+  //   });
   return (
     <div className="dinnerContainer">
       <div className="dinnerCategories">

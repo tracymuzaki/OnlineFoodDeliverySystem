@@ -17,7 +17,6 @@ function Footer() {
             <p>Equatorial mall</p>
             <p>Namugongo</p>
             <p>Kamwokya</p>
-            <h4>Mukono</h4>
           </div>
 
           <div>
