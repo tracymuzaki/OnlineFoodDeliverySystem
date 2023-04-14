@@ -117,3 +117,38 @@ img {
     color: rgb(235, 235, 198);
     margin-left: 10px;
 }
+
+@media (min-width:481px) and (max-width:768px){
+    .welcome {
+        position: absolute;
+        top: 42%;
+        color: white;
+        left: 13.5%;
+        transform: translate(-50% -50%);
+        font-size:30px;
+        margin-left: 5px;
+    
+    }
+    .orderbtn {
+        color: whitesmoke;
+        background-color: black;
+        position: absolute;
+        top: 67%;
+        left: 46%;
+        transform: translate(-50% -50%);
+        font-size:15px;
+        height: 20px;
+        border-radius: 8px;
+        border: none;
+        text-align: center;
+        padding: 0px 8px;
+    }
+    .landing img {
+        object-fit:fill;
+        opacity: 0.8;
+        width: 1800px;
+        transform: translate3d(-100px, 0px, -1000px);
+    }
+    
+    
+}

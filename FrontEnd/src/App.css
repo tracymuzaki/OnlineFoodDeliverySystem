@@ -196,6 +196,16 @@ p a:hover {
     width: 60vw;
   }
 }
+@media (min-width:481px) and (max-width:768px){
+  #login{
+    margin-top:150px
+  }
+  #register{
+    margin-top: 280px;
+  }
+}
+
+
 
 input :invalid {
   color: red;

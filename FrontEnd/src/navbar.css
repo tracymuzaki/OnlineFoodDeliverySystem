@@ -81,9 +81,9 @@ a {
 
 }
 
-a:active {
-    color: rgb(235, 75, 6);
-}
+ a:active {
+    color: rgb(235, 75, 6); 
+} 
 
 .nav_link1 {
     margin-top: 48px;
@@ -101,11 +101,11 @@ a:active {
 }
 
 .nav_link1 .home:hover {
-    color: white;
+    color: black;
 }
 
 .nav_link2 .menu:hover {
-    color: white;
+    color: black;
 }
 
 .rrr {
@@ -126,3 +126,88 @@ a:active {
     width: 150px;
     height: 41px;
 }
+.menu-icon{
+    display: none;
+}
+
+/* media query */
+
+
+@media (min-width:481px) and (max-width:768px){
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        width: 200px;
+        margin-top: 50px;
+        font-size:30px;
+
+        
+      }
+    
+    .buttonlink{
+        position:fixed;
+        right: 0;
+        top: 60px;
+        background-color:rgb(243, 245, 249);
+        width:0px;
+        height:0px;
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+        margin-top:50px;
+        padding-bottom:100px;
+    
+    
+    
+        
+    }    
+    
+    .buttonlink.active {
+        width: 100%;
+      }
+
+    .my_logo {
+        width: 80px;
+        height: 130px;
+        margin-top: 0px;
+        margin-left: 500px;
+        
+    }
+    .overall_nav {
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        background-color: rgb(235, 75, 6);
+        border-top: none;
+        border-right: none;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+    }
+    h5{
+        padding-right: 200px;
+    }
+
+    .home{
+        color:rgb(235, 75, 6);
+        /* margin-right:60px; */
+        
+    }
+    
+    .menu{
+        color:rgb(235, 75, 6);
+    
+    }
+
+    #chart {
+        margin-top: 40px;
+        width: 150px;
+        height: 41px;
+        color: black;
+        margin-right:150px;
+    }
+    #btn-r{
+        display: none;
+    }
+    
+    }
+
