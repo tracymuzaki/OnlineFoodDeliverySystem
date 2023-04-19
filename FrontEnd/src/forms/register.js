@@ -24,8 +24,8 @@ export function RegisterForm() {
     const error = {};
     if (!name) {
       error.name = "Name is required";
-    } else if (name.length > 12) {
-      error.name = "name should below 12 letters";
+    } else if (name.length > 28) {
+      error.name = "name should below 28 letters";
     } else {
       error.name = "";
     }

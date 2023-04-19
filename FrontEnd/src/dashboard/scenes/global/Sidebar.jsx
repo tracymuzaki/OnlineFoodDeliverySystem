@@ -97,16 +97,16 @@ const Sidebar = () => {
           {!isCollapsed && (
             <Box mb="25px">
               <Box display="flex" justifyContent="center" alignItems="center">
-                <img
+                {/* <img
                   alt="user_profile"
                   width="100px"
                   height="100px"
                   src={`https://lh3.googleusercontent.com/ogw/AAEL6shFZDfzHPNrrZuNBIFzedIRcxSUqHllkomcxcZXTw=s32-c-mo`}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
-                />
+                /> */}
               </Box>
               <Box textAlign="center">
-                <Typography
+                {/* <Typography
                   variant="h2"
                   color={colors.grey[100]}
                   fontWeight="bold"
@@ -116,7 +116,7 @@ const Sidebar = () => {
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
                   FA Yummy Admin
-                </Typography>
+                </Typography> */}
               </Box>
             </Box>
           )}
