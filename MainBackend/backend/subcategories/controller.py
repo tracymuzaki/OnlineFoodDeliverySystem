@@ -27,6 +27,7 @@ def new_food_subcategory():
 
     data = request.get_json()
     name = data['name']
+    image = data['image']
     category_id= data['category_id']
     created_by = get_jwt_identity()
       
@@ -39,7 +40,7 @@ def new_food_subcategory():
     if SubCategory.query.filter_by(name=name).first() is not None:
         return jsonify({'error': "Food subcategory name exists",'success':False}), 409 
 
-    new_food_subcategory = SubCategory(name=name,category_id=category_id, created_by=created_by,created_at=datetime.now(),updated_at=datetime.now()) 
+    new_food_subcategory = SubCategory(name=name,image=image,category_id=category_id, created_by=created_by,created_at=datetime.now(),updated_at=datetime.now()) 
       
     #inserting values
     db.session.add(new_food_subcategory)
@@ -59,6 +60,7 @@ def handle_food_subcategory(id):
         response = {
             "id":food_subcategory.id,
             "name": food_subcategory.name,
+            "image": food_subcategory.image,
             "created_by":food_subcategory.created_by,
             "created_at": food_subcategory.created_at
           
@@ -73,6 +75,7 @@ def handle_food_subcategory(id):
     
         
         food_subcategory.name = data['name']
+        food_category.image = data['image']
         food_subcategory.category_id = data['category_id']
         food_subcategory.updated_at = datetime.utcnow()
         db.session.add(food_subcategory)

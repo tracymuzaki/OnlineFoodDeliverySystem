@@ -23,6 +23,18 @@ import Fruits from './menus/fruits';
 import Wines from './menus/wines';
 import Desserts from './menus/desserts';
 import Appetizers from './menus/appetizers';
+import Dash from "./dashboard/dashboardapp";
+import Dashboard from "./dashboard/scenes/dashboard/index";
+import Users from "./dashboard/scenes/team/index";
+import Invoices from "./dashboard/scenes/invoices/index";
+import Contacts from "./dashboard/scenes/contacts/index";
+import Bar from "./dashboard/scenes/bar/index";
+import Form from "./dashboard/scenes/form/index";
+import Line from "./dashboard/scenes/line/index";
+import Pie from "./dashboard/scenes/pie/index";
+import FAQ from "./dashboard/scenes/faq/index";
+import Geography from "./dashboard/scenes/geography/index";
+import Calendar from "./dashboard/scenes/calendar/calendar";
 
 
 function App() {
@@ -30,6 +42,18 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/invoices" element={<Invoices />} />
+          <Route path="/form" element={<Form />} />
+          <Route path="/bar" element={<Bar />} />
+          <Route path="/pie" element={<Pie />} />
+          <Route path="/line" element={<Line />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/geography" element={<Geography />} />
+          <Route path="dashboardapp" element={<Dash />} />
           <Route index element={ [<Navbar/>,<LandingPage/>,<Footer />] } />
           <Route path="login" element={[<Navbar/>,<LoginForm />,<Footer />]} /> 
           <Route path="admin" element={[<Navbar/>,<AdminLogin />,<Footer />]} /> 

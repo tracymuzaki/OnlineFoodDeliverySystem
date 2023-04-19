@@ -1,7 +1,7 @@
 /* categories */
 .menucontainer {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto; 
   font-size: 18px;
   margin-left: 0px;
   color: rgb(230, 233, 244);

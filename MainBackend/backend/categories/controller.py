@@ -57,13 +57,16 @@ def handle_food_category(id):
     food_category = Category.query.get_or_404(id)
 
     if request.method == 'GET':
-        response = {
-            "id":food_category.id,
-            "name": food_category.name,
-            "created_by":food_category.created_by,
-            "created_at": food_category.created_at
+        response = [{
+            "id":i.food_category.id,
+            "name": i.food_category.name,
+            "image": i.food_category.image,
+            "created_by":i.food_category.created_by,
+            "created_at": i.food_category.created_at
           
         }
+        for i in response
+    ]
         return {"success": True, "category": response,"message":"Food category details retrieved"},200
 
     elif request.method == 'PUT':

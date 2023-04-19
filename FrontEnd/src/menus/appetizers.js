@@ -22,7 +22,7 @@ function Appetizers() {
           <h2>Cocktails</h2>
           <img src="./images/cocktails.jpg" alt="Cocktails" />
           <p>Price: 10000UGX</p>
-          <button>Order</button>
+          <button >Order</button>
         </div>
 
         <div className="appetizercolumn2">

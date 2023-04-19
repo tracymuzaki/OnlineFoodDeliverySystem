@@ -1,10 +1,13 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
+import {  useNavigate } from 'react-router-dom';
 
 export function AdminLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Initialize isLoggedIn state to false
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,6 +39,17 @@ export function AdminLogin() {
     }
     return error;
   };
+
+  const handleLogin = () => {
+    // Code to handle login here
+    setIsLoggedIn(true);
+    navigate('/dashboardapp'); 
+  };
+
+  if (isLoggedIn) {
+    return <Navigate to="/dashboardapp" />;
+  }
+  
   return (
     <div className="container">
       <div className="form_container" id="login">
@@ -58,7 +72,7 @@ export function AdminLogin() {
             {errors.password && <div className="error">{errors.password}</div>}
           </div>
 
-          <button className="buttonlogin">Log in</button>
+          <button className="buttonlogin" onClick={handleLogin}>Log in</button>
         </form>
         <p>
           Login as customer| <Link to="/login">Login</Link>

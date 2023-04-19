@@ -1,21 +1,29 @@
 import { Link } from "react-router-dom";
 import "./menu.css";
+// import { useState, useEffect } from "react";
 
 export function Breakfast() {
-  // fetch("http://127.0.0.1:5000/users/", {
-  //   method: "GET",
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //     "Access-Control-Allow-Origin": "*",
-  //   },
-  // })
-  //   .then((response) => response.json())
-  //   .then((data) => {
-  //     console.log(data);
-  //   })
-  //   .catch((error) => {
-  //     console.error(error);
-  //   });
+  // const [subcategories, setSubCategories] = useState([]);
+  // useEffect(() => {
+  //   function fetchAllSubCategories() {
+  //     fetch("http://127.0.0.1:5000/subcategories/", {
+  //       method: "GET",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //         "Access-Control-Allow-Origin": "*",
+  //       },
+  //     })
+  //       .then((response) => response.json())
+  //       .then((data) => {
+  //         setSubCategories(data.data);
+  //         console.log(data.data);
+  //       })
+  //       .catch((error) => {
+  //         console.error(error);
+  //       });
+  //   }
+  //   fetchAllSubCategories();
+  // }, []);
   return (
     <div class="breakfastContainer">
       <div className="breakfastcontainer">
@@ -27,7 +35,6 @@ export function Breakfast() {
         </div>
         <div className="breakfastcolumn1">
           <Link to="/snackitems">
-            {" "}
             <h2>Snacks</h2>
             <img src="./images/snacks_main.jpg" alt="snacks" />
           </Link>

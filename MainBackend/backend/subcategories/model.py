@@ -6,10 +6,12 @@ from datetime import datetime
 class SubCategory(db.Model):
     __tablename__ = "sub_categories"
     name:str
+    image:str
     category_id:int
     
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(255),unique=True)
+    image = db.Column(db.String(255),nullable=False)
     category_id= db.Column(db.Integer,db.ForeignKey('categories.id'))
     created_by  = db.Column(db.Integer,db.ForeignKey('users.id'))
     food_items = db.Relationship("FoodItem", backref='subcategory')
@@ -18,9 +20,10 @@ class SubCategory(db.Model):
     
        
 
-    def __init__(self,name,category_id,created_by,created_at,updated_at):
+    def __init__(self,name,image,category_id,created_by,created_at,updated_at):
      
      self.name = name
+     self.image = image
      self.category_id= category_id
      self.created_by = created_by
      self.created_at = created_at
