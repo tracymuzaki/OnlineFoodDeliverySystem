@@ -3,9 +3,8 @@ import { Link, Navigate } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 
 
-
-
 const LoginPage = () => {
+  
   const [AdminId, setAdminId] = useState('');
   const [Password, setPassword] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -25,21 +24,17 @@ const LoginPage = () => {
       setErrorMessage('Invalid login credentials.');
     }
   };
-  // const handleLogin = () => {
-  //   // Code to handle login here
-  //   setIsLoggedIn(true);
-  //   navigate('/dashboardapp');
-  // };
 
   if (isLoggedIn) {
     return <Navigate to="/dashboardapp" />;
   }
 
+  
   return (
     <div className="container">
       <div className="form_container" id="login">
         <div className="imgp">
-          <h2>Administrator</h2>
+          <h2>Admin</h2>
         </div>
         {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
         <form onSubmit={handleSubmit}>
@@ -50,7 +45,6 @@ const LoginPage = () => {
             <input type="password" id="password" value={Password} onChange={(e) => setPassword(e.target.value)} /><br /><br />
           </div>
           <button className="buttonlogin" type="submit" value="Login"
-          // onClick={handleLogin}
           >Login</button>
         </form>
         <p>

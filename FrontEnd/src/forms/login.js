@@ -1,25 +1,43 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState,useEffect } from "react";
+import { Link, useNavigate,Navigate } from "react-router-dom";
 
-function LoginForm() {
+export function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // check form validity
-    if (mail.trim() === "" || password.trim() === "") {
-      setErrorMessage("All fields are required");
-      return;
+  const [errors, setErrors] = useState([]);
+  const navigate = useNavigate();
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const errors = Validate();
+    
+    // set state to error
+    setErrors(errors);
+    if (errors === "") {
+      alert(email);
     }
-    // replace with your own submission logic
-    console.log("Email:", email, "Password:", password);
-    setErrorMessage("");
-    // clear the form
-    setEmail("");
-    setPassword("");
   };
+  
+  const Validate = () => {
+    const error = {};
+
+    if (!email) {
+      error.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      error.email = "Incorrect email format";
+    } else {
+      error.email = "";
+    }
+
+    if (!password) {
+      error.password = "Password is required";
+    } else {
+      error.password = "";
+    }
+    return error;
+  };
+
+  
 
   return (
     <div className="container">
@@ -27,31 +45,23 @@ function LoginForm() {
         <div className="imgp">
           <h2>Log in</h2>
         </div>
-        {errorMessage && <div className="error">{errorMessage}</div>}
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              required
-            />
+            <label htmlFor="email">Email</label>
+            <input type="text" onChange={(e) => setEmail(e.target.value)} />
+            {errors.email && <div className="error">{errors.email}</div>}
           </div>
-          <div className="form-group">
 
-            <label htmlFor="password">Password:</label>
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
             <input
               type="password"
-              id="password"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              required
+              onChange={(e) => setPassword(e.target.value)}
             />
+            {errors.password && <div className="error">{errors.password}</div>}
           </div>
 
-          <button type="submit" className="buttonlogin"><Link to="/">Log in </Link> </button>
+          <button className="buttonlogin"> <Link to="/">Log in</Link></button>
         </form>
         <p>
           Login as admin|<Link to="/admin">login</Link>
@@ -67,4 +77,3 @@ function LoginForm() {
   );
 }
 
-export { LoginForm };

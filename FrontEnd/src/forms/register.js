@@ -105,7 +105,7 @@ function RegisterForm() {
             />
           </div>
 
-          <button type="submit" className="buttonlogin"><Link to="/login"> Register</Link>
+          <button type="submit" className="buttonlogin"> Register
           </button>
         </form>
         <p>
