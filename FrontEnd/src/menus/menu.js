@@ -30,14 +30,14 @@ export function Menu() {
       {/* {categories.map((category,index) => ( */}
         <div className="menucontainer">  
           {categories.map((category) => (
-            <div className="menucolumn1">
+            <div className="menucolumn1" key={category.id}>
               <Link to="/breakfast">
-                <h2>{category.name}</h2>
-                <img src={category.image} alt="breakfast" />
+                <h2 key={category.id}>{category.name}</h2>
+                <img src={category.image} alt="breakfast" key={category.id} />
               </Link>
             </div> 
           ))}  
-          {categories.map((category) => (
+          {/* {categories.map((category) => (
             <div className="menucolumn1" >
               <Link to="/lunch">
                 <h2>{category.name}</h2>
@@ -52,7 +52,7 @@ export function Menu() {
                 <img src={category.image} alt="Dinner" />
               </Link> 
             </div>  
-          ))} 
+          ))}  */}
         </div>
       {/* ))} */}
     </div>
