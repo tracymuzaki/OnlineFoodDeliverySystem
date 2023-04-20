@@ -106,7 +106,7 @@ const Sidebar = () => {
                 /> */}
               </Box>
               <Box textAlign="center">
-                <Typography
+                {/* <Typography
                   variant="h2"
                   color={colors.grey[100]}
                   fontWeight="bold"
@@ -116,7 +116,7 @@ const Sidebar = () => {
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
                   FA Yummy Admin
-                </Typography>
+                </Typography> */}
               </Box>
             </Box>
           )}
