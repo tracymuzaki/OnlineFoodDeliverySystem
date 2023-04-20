@@ -39,6 +39,7 @@
     border-right: none;
     position: fixed;
     z-index: 1;
+    width: 100%;
 }
 
 #btns {
@@ -172,17 +173,17 @@ a {
         margin-left: 500px;
         
     }
-    .overall_nav {
+    /* .overall_nav {
         display: flex;
         flex-direction: row;
-        /* align-items: center; */
+      
         background-color: rgb(235, 75, 6);
         border-top: none;
         border-right: none;
         position: fixed;
         z-index: 1;
         width: 100%;
-    }
+    } */
     h5{
         padding-right: 200px;
     }

@@ -1,0 +1,37 @@
+Introduction:
+The online food delivery system is a web-based application that allows customers to browse different food menus, order food, and have it delivered to their location. The system is designed using ReactJS for the frontend and FlaskAPIs for the backend.
+
+System Architecture:
+The system architecture consists of two main components: the frontend and the backend. The frontend is built using ReactJS and is responsible for rendering the user interface. The backend is built using FlaskAPIs and is responsible for handling the data and logic of the application.
+
+Frontend Design:
+The frontend of the system is designed to provide a user-friendly interface for the customers. The design includes the following pages:
+
+Home Page:
+The home page displays the food categories and the featured items of the day.
+
+Menu Page:
+The menu page displays the different food items available for ordering. Customers can browse through the food items, view their details, and add them to their cart.
+
+Cart Page:
+The cart page displays the items that the customer has added to their cart. The customer can edit or remove items from the cart before checking out.
+
+Checkout Page:
+The checkout page displays the summary of the order and the payment details. The customer can enter their delivery address and complete the payment.
+
+Backend Design:
+The backend of the system is designed to handle the data and logic of the application. The design includes the following components:
+
+Database:
+The system uses a database to store the food items, customer information, and order details.
+
+API Endpoints:
+The backend provides API endpoints for the frontend to interact with. The API endpoints include:
+
+Menu API: Provides the list of food items available for ordering.
+Cart API: Provides the list of items in the customer's cart.
+Checkout API: Processes the customer's order and payment details.
+Authentication:
+The system uses authentication to ensure that only authorized users can access the application. Customers are required to create an account and log in before they can place an order.
+Conclusion:
+The online food delivery system is designed to provide a user-friendly interface for customers to browse and order food items. The system uses ReactJS for the frontend and FlaskAPIs for the backend. The design includes a home page, menu page, cart page, and checkout page for the frontend, and a database, API endpoints, and authentication for the backend

@@ -24,7 +24,7 @@ const Dashboard = () => {
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center" >
-        <Header title="ADMINISTRATOR DASHBOARD" subtitle="Welcome To Fast and Yummy Dashboard" color={colors.greenAccent[500]} />
+        <Header title="ADMIN DASHBOARD" subtitle="Welcome To Fast and Yummy Dashboard" color={colors.greenAccent[500]} />
         <Box>
           <Button
             sx={{

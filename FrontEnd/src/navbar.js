@@ -49,17 +49,6 @@ function Navbar() {
         <Link to="/register">
           <button id="btn-r">Register</button>
         </Link>
-        <Link to="/chart">
-          <div className="cart">
-            <span>
-              <FontAwesomeIcon
-                icon={faCartPlus}
-                className="fa-solid fa-cart-plus"
-                id="chart"
-              />
-            </span>
-          </div>
-        </Link>
       </div>
     </div>
   );

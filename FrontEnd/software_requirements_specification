@@ -1,0 +1,54 @@
+
+Software Requirements Specification for Online Food Delivery System using ReactJS and FlaskAPIs
+
+Introduction
+The Online Food Delivery System is a web-based application that allows customers to order food online and have it delivered to their location. The system is designed using ReactJS for the frontend and FlaskAPIs for the backend. This document outlines the functional and non-functional requirements of the system.
+
+Functional Requirements
+2.1 User Management
+The system should allow users to create an account and log in to the application. The system should store the user's personal information, such as name, address, and contact information.
+
+2.2 Menu Management
+The system should allow restaurant owners to add, update, and delete food items from the menu. The system should also allow restaurant owners to update the prices of food items.
+
+2.3 Cart Management
+The system should allow customers to add food items to their cart, remove items from their cart, and update the quantity of items in their cart.
+
+2.4 Order Management
+The system should allow customers to place an order and select their preferred payment method. The system should also allow restaurant owners to view and manage orders.
+
+2.5 Delivery Management(Future prospects)
+The system should allow delivery personnel to view and manage delivery requests. The system should also allow delivery personnel to update the status of the delivery.
+
+2.6 Customer Support
+The system should provide customers with the ability to contact customer support in case of any issues or concerns.
+
+Non-functional Requirements
+3.1 Performance
+The system should be able to handle a large number of users and requests without significant performance degradation.
+3.2 Security
+The system should use encryption and secure authentication mechanisms to ensure the security of user information and payment details.
+
+3.3 Usability
+The system should have a user-friendly interface that is easy to navigate and use.
+
+3.4 Reliability
+The system should be available and responsive at all times, with a minimum downtime.
+
+Technical Requirements
+4.1 Frontend Technology
+The system should be developed using ReactJS for the frontend.
+4.2 Backend Technology
+The system should be developed using FlaskAPIs for the backend.
+
+4.3 Database Technology
+The system should use a relational database, such as MySQL or PostgreSQL, to store user information, menu items, and order details.
+
+Constraints
+5.1 Third-Party Integration
+The system may need to integrate with third-party services, such as payment gateways, mapping APIs, or SMS gateways.
+5.2 Legal Compliance
+The system should comply with all relevant laws and regulations, such as data protection laws and food safety regulations.
+
+Conclusion
+This Software Requirements Specification outlines the functional and non-functional requirements of the Online Food Delivery System. The system is designed using ReactJS and FlaskAPIs for the frontend and backend, respectively. The system should be secure, reliable, and user-friendly, with a minimum downtime.

@@ -86,7 +86,7 @@ const Sidebar = () => {
                 
               >
                 <Typography variant="h3" color={colors.grey[100]} >
-                  ADMINISTRATORS
+                  ADMINS
                   
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
@@ -124,7 +124,7 @@ const Sidebar = () => {
           )}
 
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
-            <Item
+            {/* <Item
               title="Dashboard"
               to="/dashboard"
               icon={<HomeOutlinedIcon />}
@@ -132,7 +132,7 @@ const Sidebar = () => {
               setSelected={setSelected}
               
 
-            />
+            /> */}
 
             <Typography
               variant="h6"
