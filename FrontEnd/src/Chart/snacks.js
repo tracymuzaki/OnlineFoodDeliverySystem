@@ -1,10 +1,10 @@
 import React , {useState} from 'react';
 import Navbar2 from './components/Chart1';
-import Amazon from './components/Amazon';
+import {Snacks} from './components/Amazon';
 import Cart from './components/Cart';
 import './styles/amazon.css';
 
-const Chart = () => {
+const Snacktype = () => {
 	const [show, setShow] = useState(true);
 	const [cart , setCart] = useState([]);
 	const [warning, setWarning] = useState(false);
@@ -43,7 +43,7 @@ const Chart = () => {
 	<React.Fragment>
 		<Navbar2 size={cart.length} setShow={setShow} />
 		{
-			show ? <Amazon handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
+			show ? <Snacks handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
 		}
 		{
 			warning && <div className='warning'>Item is already added to cart</div>
@@ -52,4 +52,4 @@ const Chart = () => {
   )
 }
 
-export default Chart
+export default Snacktype

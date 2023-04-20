@@ -23,7 +23,7 @@ article{
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
-    border-bottom: 2px solid skyblue;
+    border-bottom: 2px  orangered;
     padding-bottom: 5px;
 }
 .cart_box div:nth-child(2) button{
@@ -38,15 +38,15 @@ article{
     border:none;
     outline: none;
     color: white;
-    background-color: skyblue;
+    background-color: orangered;
     border-radius: 5px;
     cursor: pointer;
 }
 .cart_box div:nth-child(3) button:hover{
-    background-color: darkseagreen;
+    background-color: white;
 }
 .cart_box div:nth-child(3) span{
-    background-color: lightgreen;
+    background-color: white;
     padding: 5px 10px;
     border-radius: 5px;
     margin-right: 10px;
@@ -57,12 +57,12 @@ article{
 }
 .total span:nth-child(1){
     font-size: 2rem;
-    color: skyblue;
+    color: orangered;
     font-weight: bold;
     letter-spacing: 2px;
 }
 .total span:nth-child(2){
     font-size: 2rem;
-    color: green;
+    color: white;
     font-weight: bold;
 }

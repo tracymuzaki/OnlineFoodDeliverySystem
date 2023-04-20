@@ -16,25 +16,27 @@ section{
     cursor: pointer;
 }
 .image_box img{
-    width: 150px;
+    width: 250px;
     height: 200px;
 }
 .details p:nth-child(1){
     font-weight: bold;
+    font-size: 22px;
 }
 .details p:nth-child(2){
-    color: grey;
-    font-size: 0.8rem;
+    color: white;
+    font-size: 20px;
 }
 .details p:nth-child(3){
     font-weight: bold;
-    color: grey;
+    color:white;
+    font-size: 22px;
 }
 .details button{
     padding: 5px 10px;
     border: none;
     font-weight: bold;
-    background-color: skyblue;
+    background-color: orangered;
     outline: none;
     border-radius: 2px;
 }
