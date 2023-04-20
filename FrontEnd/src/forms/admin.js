@@ -14,7 +14,7 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You should replace these values with your actual admin ID and password
+    //  your actual admin ID and password
     const adminId = 'FA12';
     const password = 'Magmapod@#$%2';
 

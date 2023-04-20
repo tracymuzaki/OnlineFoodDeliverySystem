@@ -1,94 +1,112 @@
-// import { editableInputTypes } from "@testing-library/user-event/dist/utils";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-export function RegisterForm() {
+
+function RegisterForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
   const [password, setPassword] = useState("");
-  const [errors, setErrors] = useState([]);
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
 
-    const errors = Validate();
-
-    // set state to error
-    setErrors(errors);
-    if (errors === "") {
-      alert(email);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // check form validity
+    if (
+      name.trim() === "" ||
+      email.trim() === "" ||
+      contact.trim() === "" ||
+      password.trim() === "" ||
+      confirmPassword.trim() === ""
+    ) {
+      alert("All fields are required");
+      return;
     }
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+
+    }
+    // submit the form data
+    const formData = {
+      name,
+      email,
+      contact,
+      password,
+    };
+    //  submission logic
+    console.log(formData);
+    setSuccessMessage("yey Registration successful!");
+    // clear the form
+    setName("");
+    setEmail("");
+    setContact("");
+    setPassword("");
+    setConfirmPassword("");
   };
 
-  const Validate = () => {
-    const error = {};
-    if (!name) {
-      error.name = "Name is required";
-    } else if (name.length > 28) {
-      error.name = "name should below 28 letters";
-    } else {
-      error.name = "";
-    }
-    if (!email) {
-      error.email = "Email is required";
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      error.email = "Incorrect email format";
-    } else {
-      error.email = "";
-    }
-
-    if (!contact) {
-      error.contact = "Contact is required";
-    } else if (!contact.length === 10) {
-      error.contact = "Contact is incorrect";
-    } else if (isNaN(contact)) {
-      error.contact = "Contact should include numbers";
-    } else {
-      error.contact = "";
-    }
-
-    if (!password) {
-      error.password = "Password is required";
-    } else {
-      error.password = "";
-    }
-    return error;
-  };
   return (
     <div className="container">
       <div className="form_container" id="register">
         <div className="imgp">
-          <h2>Sign Up</h2>
+          <h2>Register</h2>
         </div>
+
+        {successMessage && <div>{successMessage}</div>}
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" onChange={(e) => setName(e.target.value)} />
-            {errors.name && <div className="error">{errors.name}</div>}
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+              required
+            />
           </div>
-
           <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input type="text" onChange={(e) => setEmail(e.target.value)} />
-            {errors.email && <div className="error">{errors.email}</div>}
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              required
+            />
           </div>
-
           <div className="form-group">
-            <label htmlFor="contact">Contact</label>
-            <input type="text" onChange={(e) => setContact(e.target.value)} />
-            {errors.contact && <div className="error">{errors.contact}</div>}
+            <label htmlFor="contact">Contact:</label>
+            <input
+              type="tel"
+              id="contact"
+              value={contact}
+              onChange={(event) => setContact(event.target.value)}
+              required
+            />
           </div>
-
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Password:</label>
             <input
               type="password"
-              onChange={(e) => setPassword(e.target.value)}
+              id="password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              required
             />
-            {errors.password && <div className="error">{errors.password}</div>}
+          </div>
+          <div className="form-group">
+            <label htmlFor="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              value={confirmPassword}
+              onChange={(event) => setConfirmPassword(event.target.value)}
+              required
+            />
           </div>
 
-          <button className="buttonlogin">Register</button>
+          <button type="submit" className="buttonlogin"><Link to="/login"> Register</Link>
+          </button>
         </form>
         <p>
           Already have an account?|<Link to="/login"> Log in</Link>
@@ -101,3 +119,6 @@ export function RegisterForm() {
     </div>
   );
 }
+
+
+export { RegisterForm } 

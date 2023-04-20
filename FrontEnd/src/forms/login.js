@@ -1,64 +1,57 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-export function LoginForm() {
+function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errors, setErrors] = useState([]);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const errors = Validate();
-
-    // set state to error
-    setErrors(errors);
-    if (errors === "") {
-      alert(email);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // check form validity
+    if (mail.trim() === "" || password.trim() === "") {
+      setErrorMessage("All fields are required");
+      return;
     }
+    // replace with your own submission logic
+    console.log("Email:", email, "Password:", password);
+    setErrorMessage("");
+    // clear the form
+    setEmail("");
+    setPassword("");
   };
 
-  const Validate = () => {
-    const error = {};
-
-    if (!email) {
-      error.email = "Email is required";
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      error.email = "Incorrect email format";
-    } else {
-      error.email = "";
-    }
-
-    if (!password) {
-      error.password = "Password is required";
-    } else {
-      error.password = "";
-    }
-    return error;
-  };
   return (
     <div className="container">
       <div className="form_container" id="login">
         <div className="imgp">
           <h2>Log in</h2>
         </div>
+        {errorMessage && <div className="error">{errorMessage}</div>}
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input type="text" onChange={(e) => setEmail(e.target.value)} />
-            {errors.email && <div className="error">{errors.email}</div>}
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              required
+            />
           </div>
-
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+
+            <label htmlFor="password">Password:</label>
             <input
               type="password"
-              onChange={(e) => setPassword(e.target.value)}
+              id="password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              required
             />
-            {errors.password && <div className="error">{errors.password}</div>}
           </div>
 
-          <button className="buttonlogin">Log in</button>
+          <button type="submit" className="buttonlogin"><Link to="/">Log in </Link> </button>
         </form>
         <p>
           Login as admin|<Link to="/admin">login</Link>
@@ -73,3 +66,5 @@ export function LoginForm() {
     </div>
   );
 }
+
+export { LoginForm };

@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { RegisterForm } from './forms/register';
 import Chart from './Chart/chart';
 import { LoginForm } from './forms/login';
-import  LoginPage  from './forms/admin';
+import LoginPage from './forms/admin';
 import { Menu } from './menus/menu';
 import { NoPage } from "./nopage";
 import { Lunch } from './menus/lunch';
@@ -28,12 +28,12 @@ import Dashboard from "./dashboard/scenes/dashboard/index";
 import Users from "./dashboard/scenes/team/index";
 import Invoices from "./dashboard/scenes/invoices/index";
 import Contacts from "./dashboard/scenes/contacts/index";
-import Bar from "./dashboard/scenes/bar/index";
+import Bar from "./dashboard/scenes/fooditems/index";
 import Form from "./dashboard/scenes/form/index";
 import Line from "./dashboard/scenes/line/index";
-import Pie from "./dashboard/scenes/pie/index";
+// import Pie from "./dashboard/scenes/pie/index";
 import FAQ from "./dashboard/scenes/faq/index";
-import Geography from "./dashboard/scenes/geography/index";
+import Geography from "./dashboard/scenes/location/index";
 import Calendar from "./dashboard/scenes/calendar/calendar";
 
 
@@ -47,12 +47,12 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/invoices" element={<Invoices />} />
           <Route path="/form" element={<Form />} />
-          <Route path="/bar" element={<Bar />} />
-          <Route path="/pie" element={<Pie />} />
+          <Route path="/fooditems" element={<Bar />} />
+          {/* <Route path="/pie" element={<Pie />} /> */}
           <Route path="/line" element={<Line />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/calendar" element={<Calendar />} />
-          <Route path="/geography" element={<Geography />} />
+          <Route path="/location" element={<Geography />} />
           <Route path="dashboardapp" element={<Dash />} />
           <Route index element={[<Navbar />, <LandingPage />, <Footer />]} />
           <Route path="login" element={[<Navbar />, <LoginForm />, <Footer />]} />

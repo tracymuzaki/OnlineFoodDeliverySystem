@@ -24,7 +24,7 @@ const Dashboard = () => {
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Header title="ADMINISTRATOR DASHBOARD" subtitle="Welcome to your dashboard" />
+        <Header title="ADMINISTRATOR DASHBOARD" subtitle="Welcome To Fast and Yummy Dashboard" />
         <Box>
           <Button
             sx={{
@@ -57,7 +57,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="12,361"
+            title="31"
             subtitle="Orders Received "
             progress="0.75"
             increase="+14%"
@@ -77,10 +77,10 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="361"
+            title="06"
             subtitle="Canceled Orders"
             progress="0.75"
-            increase="+7%"
+            increase="+0.9%"
             icon={
               <DeliveryDiningOutlinedIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -97,10 +97,10 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="61"
+            title="1"
             subtitle="Returned Orders"
-            progress="0.75"
-            increase="+3%"
+            progress="0.001"
+            increase="+0.5%"
             icon={
               <DeliveryDiningOutlinedIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -119,7 +119,7 @@ const Dashboard = () => {
 
 
           <StatBox
-            title="931,225"
+            title="95"
             subtitle="Total Number of FoodItems"
             progress="0.50"
             increase="+21%"
@@ -141,7 +141,7 @@ const Dashboard = () => {
 
 
           <StatBox
-            title="83,520,000"
+            title="UGx 520,000"
             subtitle="Total Sales"
             progress="0.50"
             increase="+28%"
@@ -163,10 +163,10 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="902,441"
+            title="110"
             subtitle="Total Users"
             progress="0.40"
-            increase="+10%"
+            increase="+20%"
             icon={
               <PeopleOutlineOutlinedIcon 
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -182,7 +182,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="52,441"
+            title="41"
             subtitle="New Users"
             progress="0.30"
             increase="+5%"
@@ -203,10 +203,10 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="1,325,134"
+            title="94"
             subtitle="Traffic Received"
             progress="0.80"
-            increase="+43%"
+            increase="+40%"
             icon={
               <TrafficIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -239,9 +239,9 @@ const Dashboard = () => {
               <Typography
                 variant="h3"
                 fontWeight="bold"
-                color={colors.greenAccent[500]}
+                color={colors.grey[100]}
               >
-                53,520,000UGx
+               UGx 1,520,000
               </Typography>
             </Box>
             <Box>
@@ -266,7 +266,7 @@ const Dashboard = () => {
             display="flex"
             justifyContent="space-between"
             alignItems="center"
-            borderBottom={`4px solid ${colors.primary[500]}`}
+            borderBottom={`4px solid UGx{colors.primary[500]}`}
             colors={colors.grey[100]}
             p="15px"
           >
@@ -276,16 +276,16 @@ const Dashboard = () => {
           </Box>
           {mockTransactions.map((transaction, i) => (
             <Box
-              key={`${transaction.txId}-${i}`}
+              key={`UGx{transaction.txId}-UGx{i}`}
               display="flex"
               justifyContent="space-between"
               alignItems="center"
-              borderBottom={`4px solid ${colors.primary[500]}`}
+              borderBottom={`4px solid UGx{colors.primary[500]}`}
               p="15px"
             >
               <Box>
                 <Typography
-                  color={colors.greenAccent[500]}
+                  color={colors.grey[100]}
                   variant="h5"
                   fontWeight="600"
                 >
@@ -301,7 +301,7 @@ const Dashboard = () => {
                 p="5px 10px"
                 borderRadius="4px"
               >
-                ${transaction.cost}
+                UGx{transaction.cost}
               </Box>
             </Box>
           ))}
@@ -315,7 +315,7 @@ const Dashboard = () => {
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-            Campaign
+            Growth And Progress
           </Typography>
           <Box
             display="flex"
@@ -326,12 +326,12 @@ const Dashboard = () => {
             <ProgressCircle size="125" />
             <Typography
               variant="h5"
-              color={colors.greenAccent[500]}
+              color={colors.grey[100]}
               sx={{ mt: "15px" }}
             >
-              53,522,000Ugx revenue generated
+               UGx 1,522,000 revenue generated
             </Typography>
-            <Typography>Includes extra misc expenditures and costs</Typography>
+            <Typography>Includes  expenditures and costs</Typography>
           </Box>
         </Box>
         <Box
