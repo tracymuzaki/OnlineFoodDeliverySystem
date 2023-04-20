@@ -1,4 +1,41 @@
 import { tokens } from "../../theme";
+// import { Link } from "react-router-dom";
+// import { useState, useEffect } from "react";
+
+// export function mockDataTeam() {
+//   const [users, setUsers] = useState([]);
+//   useEffect(() => {
+//     function fetchAllUsers() {
+//       fetch("http://127.0.0.1:5000/subcategories/", {
+//         method: "GET",
+//         headers: {
+//           "Content-Type": "application/json",
+//           "Access-Control-Allow-Origin": "*",
+//         },
+//       })
+//         .then((response) => response.json())
+//         .then((data) => {
+//           setUsers(data.data);
+//           console.log(data.data);
+//         })
+//         .catch((error) => {
+//           console.error(error);
+//         });
+//     }
+//     fetchAllUsers();
+//   }, []);
+//   return (
+//     <div>
+//       {users.map((user) => (
+//           <Link to="/users">
+//             <h2 key={user.id}>{user.name}</h2>
+//             <p>{user.email}</p>
+//           </Link>
+//         ))} 
+//     </div>
+//   );
+// }
+
 
 export const mockDataTeam = [
   {

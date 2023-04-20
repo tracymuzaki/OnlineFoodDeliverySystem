@@ -15,14 +15,12 @@ food_items = Blueprint('food_items',__name__,url_prefix='/food_items')
 def all_food_items():
     food_items = FoodItem.query.all()
     
-    response = [{
-                "id":item.id,
-                "name": item.name,
-                "created_by":item.created_by,
-                "created_at": item.created_at,
-            }for item in food_items]
-        
-    return jsonify({"success":True,"data":response,"total":len(food_items)}),200
+    return jsonify({
+            "success":True,
+            "data":food_items,
+            "total":len(food_items)
+        }),200
+
 
 #creating FoodItems
 @food_items.route('/create', methods= ['POST'])
@@ -64,6 +62,11 @@ def handle_food_item(id):
         response = {
             "id":food_item.id,
             "name": food_item.name,
+            "price":food_item.price,
+            "price_unit" :food_item.price_unit,
+            "image":food_item.image,
+            "sub_category_id": food_item.sub_category_id,
+            "stock_measure ":food_item.stock_measure,
             "created_by":food_item.created_by,
             "created_at": food_item.created_at 
         }

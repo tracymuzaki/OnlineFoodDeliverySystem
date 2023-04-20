@@ -19,7 +19,6 @@ def all_subcategories():
         }),200
 
 
-
 #creating subcategories
 @subcategories.route('/create', methods= ['POST'])
 @jwt_required()
@@ -75,7 +74,7 @@ def handle_food_subcategory(id):
     
         
         food_subcategory.name = data['name']
-        food_category.image = data['image']
+        food_subcategory.image = data['image']
         food_subcategory.category_id = data['category_id']
         food_subcategory.updated_at = datetime.utcnow()
         db.session.add(food_subcategory)
