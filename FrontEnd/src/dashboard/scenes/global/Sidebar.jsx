@@ -50,7 +50,7 @@ const Sidebar = () => {
     <Box
       sx={{
         "& .pro-sidebar-inner": {
-          background: `${colors.primary[400]} !important`,
+          background: `${colors.greenAccent[500]} !important`,
         },
         "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important",
@@ -62,7 +62,7 @@ const Sidebar = () => {
           color: "#868dfb !important",
         },
         "& .pro-menu-item.active": {
-          color: "#6870fa !important",
+          color: "#ffffff !important",
         },
       }}
     >
@@ -83,9 +83,11 @@ const Sidebar = () => {
                 justifyContent="space-between"
                 alignItems="center"
                 ml="15px"
+                
               >
-                <Typography variant="h3" color={colors.grey[100]}>
+                <Typography variant="h3" color={colors.grey[100]} >
                   ADMINISTRATORS
+                  
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -114,7 +116,7 @@ const Sidebar = () => {
                 >
                   Pookie W A
                 </Typography>
-                <Typography variant="h5" color={colors.greenAccent[500]}>
+                <Typography variant="h5" color={colors.grey[100]}>
                   FA Yummy Admin
                 </Typography> */}
               </Box>
@@ -128,11 +130,13 @@ const Sidebar = () => {
               icon={<HomeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
+              
+
             />
 
             <Typography
               variant="h6"
-              color={colors.grey[300]}
+              color={colors.grey[100]}
               sx={{ m: "15px 0 5px 20px" }}
             >
               Data
@@ -150,6 +154,7 @@ const Sidebar = () => {
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
+                
             />
             {/* <Item
               title="Invoice Balances"
@@ -200,6 +205,7 @@ const Sidebar = () => {
               icon={<FastfoodOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
+              color={colors.grey[100]}
             />
             <Item
               title="Orders"
@@ -242,7 +248,7 @@ const Sidebar = () => {
 
             <Typography
               variant="h6"
-              color={colors.grey[300]}
+              color={colors.grey[100]}
               sx={{ m: "15px 0 5px 20px" }}
             >
               Charts

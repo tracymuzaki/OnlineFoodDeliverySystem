@@ -23,12 +23,12 @@ const Dashboard = () => {
   return (
     <Box m="20px">
       {/* HEADER */}
-      <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Header title="ADMINISTRATOR DASHBOARD" subtitle="Welcome To Fast and Yummy Dashboard" />
+      <Box display="flex" justifyContent="space-between" alignItems="center" >
+        <Header title="ADMINISTRATOR DASHBOARD" subtitle="Welcome To Fast and Yummy Dashboard" color={colors.greenAccent[500]} />
         <Box>
           <Button
             sx={{
-              backgroundColor: colors.blueAccent[700],
+              backgroundColor: colors.greenAccent[500],
               color: colors.grey[100],
               fontSize: "14px",
               fontWeight: "bold",
@@ -63,7 +63,7 @@ const Dashboard = () => {
             increase="+14%"
             icon={
               <DeliveryDiningOutlinedIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.greenAccent[500], fontSize: "26px" }}
               />
             }
           />
@@ -83,7 +83,7 @@ const Dashboard = () => {
             increase="+0.9%"
             icon={
               <DeliveryDiningOutlinedIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.greenAccent[500], fontSize: "26px" }}
               />
             }
           />
@@ -103,7 +103,7 @@ const Dashboard = () => {
             increase="+0.5%"
             icon={
               <DeliveryDiningOutlinedIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.greenAccent[500], fontSize: "26px" }}
               />
             }
           />
@@ -125,7 +125,7 @@ const Dashboard = () => {
             increase="+21%"
             icon={
               <FastfoodOutlinedIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.greenAccent[500], fontSize: "26px" }}
               />
             }
           />
@@ -147,7 +147,7 @@ const Dashboard = () => {
             increase="+28%"
             icon={
               <PointOfSaleIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.greenAccent[500], fontSize: "26px" }}
               />
             }
           />
@@ -169,7 +169,7 @@ const Dashboard = () => {
             increase="+20%"
             icon={
               <PeopleOutlineOutlinedIcon 
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.greenAccent[500], fontSize: "26px" }}
               />
             }
           />
@@ -188,7 +188,7 @@ const Dashboard = () => {
             increase="+5%"
             icon={
               <PersonAddIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.greenAccent[500], fontSize: "26px" }}
               />
             }
           />
@@ -209,7 +209,7 @@ const Dashboard = () => {
             increase="+40%"
             icon={
               <TrafficIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.greenAccent[500], fontSize: "26px" }}
               />
             }
           />
@@ -239,7 +239,7 @@ const Dashboard = () => {
               <Typography
                 variant="h3"
                 fontWeight="bold"
-                color={colors.grey[100]}
+                color={colors.greenAccent[500]}
               >
                UGx 1,520,000
               </Typography>
