@@ -34,7 +34,8 @@ export function Lunch() {
         </div>
 
         <div className="lunchcolumn3">
-          <Link to="/fruits">
+          <Link to="/fruits
+          ">
             <h2>Fruits</h2>
             <img src="./images/fruits_main.jpg" alt="fruits" />
           </Link>

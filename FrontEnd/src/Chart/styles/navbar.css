@@ -4,10 +4,11 @@
 }
 nav{
     width: 100%;
-    height: 60px;
-    background-color: darkorange;
+    height: 120px;
+    background-color: orangered;
 }
 .nav_box{
+    padding: 30px;
     width: 80%;
     margin: auto;
     display: flex;
@@ -17,9 +18,13 @@ nav{
 .my_shop{
     font-size: 1.5rem;
     font-weight: bold;
-    color: white;
+    color: green;
     font-family: cursive;
     cursor: pointer;
+}
+
+.my_shop p{
+    color:beige
 }
 .cart{
     cursor: pointer;
@@ -38,4 +43,7 @@ nav{
     border-radius: 5px;
     position: relative;
     top: -15px;
+}
+button{
+    background-color: none;
 }

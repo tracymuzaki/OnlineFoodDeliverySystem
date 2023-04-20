@@ -3,7 +3,7 @@ import { Link, Navigate } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 
 
-const LoginPage = () => {
+const AdminLogin = () => {
   
   const [AdminId, setAdminId] = useState('');
   const [Password, setPassword] = useState('');
@@ -59,7 +59,7 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export  {AdminLogin};
 
 
 

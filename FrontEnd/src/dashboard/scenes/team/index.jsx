@@ -53,8 +53,8 @@ const Users = () => {
               access === "admin"
                 ? colors.greenAccent[600]
                 : access === "manager"
-                ? colors.greenAccent[700]
-                : colors.greenAccent[700]
+                ? colors.greenAccent[600]
+                : colors.greenAccent[600]
             }
             borderRadius="4px"
           >
@@ -84,10 +84,10 @@ const Users = () => {
             borderBottom: "none",
           },
           "& .name-column--cell": {
-            color: colors.greenAccent[300],
+            color: colors.greenAccent[600],
           },
           "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.greenAccent[600],
             borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {
@@ -95,10 +95,10 @@ const Users = () => {
           },
           "& .MuiDataGrid-footerContainer": {
             borderTop: "none",
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.greenAccent[600],
           },
           "& .MuiCheckbox-root": {
-            color: `${colors.greenAccent[200]} !important`,
+            color: `${colors.greenAccent[600]} !important`,
           },
         }}
       >
