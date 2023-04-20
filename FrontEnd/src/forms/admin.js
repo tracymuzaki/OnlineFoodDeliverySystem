@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-const LoginPage = () => {
+const AdminLogin = () => {
   const [AdminId, setAdminId] = useState('');
   const [Password, setPassword] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -39,7 +39,7 @@ const LoginPage = () => {
     <div className="container">
       <div className="form_container" id="login">
         <div className="imgp">
-          <h2>Administrator</h2>
+          <h2>Admin</h2>
         </div>
         {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
         <form onSubmit={handleSubmit}>
@@ -65,7 +65,7 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export  {AdminLogin};
 
 
 
