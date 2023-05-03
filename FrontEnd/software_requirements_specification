@@ -5,7 +5,7 @@ Introduction
 The Online Food Delivery System is a web-based application that allows customers to order food online and have it delivered to their location. The system is designed using ReactJS for the frontend and FlaskAPIs for the backend. This document outlines the functional and non-functional requirements of the system.
 
 Functional Requirements
-2.1 User Management
+2.1 User Management(still in progress)
 The system should allow users to create an account and log in to the application. The system should store the user's personal information, such as name, address, and contact information.
 
 2.2 Menu Management
@@ -15,7 +15,7 @@ The system should allow restaurant owners to add, update, and delete food items 
 The system should allow customers to add food items to their cart, remove items from their cart, and update the quantity of items in their cart.
 
 2.4 Order Management
-The system should allow customers to place an order and select their preferred payment method. The system should also allow restaurant owners to view and manage orders.
+The system should allow customers to place an order. The system should also allow restaurant owners to view and manage orders.
 
 2.5 Delivery Management(Future prospects)
 The system should allow delivery personnel to view and manage delivery requests. The system should also allow delivery personnel to update the status of the delivery.

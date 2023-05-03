@@ -30,7 +30,7 @@ function TeaItems() {
         <div className="teacolumn1">
           <h2 key={fooditem.id}>{fooditem.name}</h2>
           <img src={fooditem.image} alt="milk" />
-          <p>Price: {fooditem.price}{fooditem.price_unit}</p>
+          <p>Price - {fooditem.price}{fooditem.price_unit}</p>
           <button>Order</button> 
 
           {/* <h2 key={fooditem.id}>{fooditem.name}</h2>

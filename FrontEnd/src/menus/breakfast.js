@@ -1,29 +1,29 @@
 import { Link } from "react-router-dom";
 import "./menu.css";
-// import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export function Breakfast() {
-  // const [subcategories, setSubCategories] = useState([]);
-  // useEffect(() => {
-  //   function fetchAllSubCategories() {
-  //     fetch("http://127.0.0.1:5000/subcategories/", {
-  //       method: "GET",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //         "Access-Control-Allow-Origin": "*",
-  //       },
-  //     })
-  //       .then((response) => response.json())
-  //       .then((data) => {
-  //         setSubCategories(data.data);
-  //         console.log(data.data);
-  //       })
-  //       .catch((error) => {
-  //         console.error(error);
-  //       });
-  //   }
-  //   fetchAllSubCategories();
-  // }, []);
+  const [subcategories, setSubCategories] = useState([]);
+  useEffect(() => {
+    function fetchAllSubCategories() {
+      fetch("http://127.0.0.1:5000/subcategories/", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          setSubCategories(data.data);
+          console.log(data.data);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
+    fetchAllSubCategories();
+  }, []);
   return (
     <div class="breakfastContainer">
       <div className="breakfastcontainer">

@@ -40,9 +40,9 @@ const AdminLogin = () => {
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="admin-id">Admin ID:</label>
-            <input type="text" id="admin-id" value={AdminId} onChange={(e) => setAdminId(e.target.value)} /><br /><br />
+            <input type="text" id="admin-id" value={AdminId} onChange={(e) => setAdminId(e.target.value)} />
             <label htmlFor="password">Password:</label>
-            <input type="password" id="password" value={Password} onChange={(e) => setPassword(e.target.value)} /><br /><br />
+            <input type="password" id="password" value={Password} onChange={(e) => setPassword(e.target.value)} />
           </div>
           <button className="buttonlogin" type="submit" value="Login"
           >Login</button>

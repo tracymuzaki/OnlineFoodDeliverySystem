@@ -140,11 +140,18 @@ p {
 }
 
 #login {
-  height: 65vh;
+  height: 70vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #register {
   margin-top: 110px;
+  padding-top: 12px;
+}
+
+#msg{
+  color: rgb(12, 237, 12);
 }
 
 p a {

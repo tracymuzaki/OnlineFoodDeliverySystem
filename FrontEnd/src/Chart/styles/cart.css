@@ -5,6 +5,7 @@
 article{
     width: 60%;
     margin: auto;
+    padding-bottom: 1000px;
 }
 .cart_box img{
     width: 50px;
@@ -17,6 +18,9 @@ article{
 .cart_img p {
     font-weight: bold;
     margin-left: 10px;
+    color: white;
+    margin-top: 8px;
+    font-size: 25px;
 }
 .cart_box{
     display: flex;
@@ -44,6 +48,7 @@ article{
 }
 .cart_box div:nth-child(3) button:hover{
     background-color: white;
+    color: black;
 }
 .cart_box div:nth-child(3) span{
     background-color: white;

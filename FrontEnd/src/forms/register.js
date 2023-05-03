@@ -52,7 +52,7 @@ function RegisterForm() {
           <h2>Register</h2>
         </div>
 
-        {successMessage && <div>{successMessage}</div>}
+        {successMessage && <div id="msg">{successMessage}</div>}
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>
